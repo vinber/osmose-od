@@ -1,11 +1,3 @@
-à savoir
-
-- concernant la numérotation des items
-
-- centaine et dizaine définissent le jeu de données
-- le millier la thématique
-- l'unité la sous partie !
-
 ## Osmose
 
 Osmose (osmose.openstreetmap.fr) permet :
@@ -36,6 +28,14 @@ Pour la suite, nous devons avoir un fichier **opendata** (LO ou OdbL). Pour la f
 - à une adresse url fixe
 - ouvrir une page wiki (encore à creuser l'organisation, mais on peut trouver un certain nombre de page déjà faite ici : https://wiki.openstreetmap.org/wiki/France/data.gouv.fr)
 
+Il faudra aussi avoir un numéro pour ce fichier :
+
+- concernant la numérotation des items
+- centaine et dizaine définissent le jeu de données
+- le millier la thématique
+- l'unité la sous partie !
+
+
 ## Osmose-OD (OD pour OpenData)
 
 Osmose-OD va permettre de faire le rapprochement entre les données OSM et les données ouvertes.
@@ -53,7 +53,7 @@ Chaque fichier OD nécessite quelques lignes de code permettant de définir :
 
 - les caractérisitiques du fichier OD (encodage, URL, source, millésime, ...)
 - les correspondances entre les champs du fichier OD et les tags OSM,
-Cette corerspondance est soit directement dans le fichier merge soit dans un fichier de mapping (qui se concentre sur le rapprochement entre les en-têtes de colonnes et les tags osm)
+Cette correspondance est soit directement faite dans le fichier merge soit dans un fichier de mapping (qui se concentre sur le rapprochement entre les en-têtes de colonnes et les tags osm).
 
 - à savoir Osmose peut faire beaucoup beaucoup de choses
   - partir de fichiers csv, json, shp, gtfs, y compris dans un zip
@@ -72,7 +72,7 @@ Cette corerspondance est soit directement dans le fichier merge soit dans un fic
 
 ## Exemple de codes
 
-- une url pour une fiche sur le jeu de donnée
+- une url pour un code simple mais complet bnls ?
 
 - le nom du jeu de données
 
@@ -99,6 +99,27 @@ Cette corerspondance est soit directement dans le fichier merge soit dans un fic
 		- soit la référence
 		- soit un tag (exemple d'un tag wikipédia)
 
+
+
+# Osmose OD, nouveau frontend ?
+
+Pour éviter de faire un doublon de ce qui existe sur osmose actuellement, il est nécessaire de :
+
+- définir comment on catégorise les fichiers OD.
+
+Proposition de reprendre la catégorisation faite par data.gouv :
+
+- Agriculture et alimentation
+- Culture
+- Economie et emploi
+- Éducation et recherche
+- International et europe
+- Logement, développement durable et énergie
+- Santé et social
+- Société
+- Territoires, transports et tourisme
+
+
 # Redéfinir les catégories, les items et class d'osmose OD
 
 - quelles catégories / 9 catégories
@@ -124,7 +145,7 @@ peut-être se baser sur une lecture des principales bases de données géocodée
 	- sous division des items en class (raisons différentes)
 	- on peut filter soit par items, soit par class
 
-Cette clsse est un numéro qui doit être unique, pas encore compris comment on le définit
+Cette classe est un numéro qui doit être unique, pas encore compris comment on le définit
 
 
 la classe peut-être le territoire, ce qui est aujourd'hui en partie le cas.
@@ -134,21 +155,3 @@ On peut filtrer les analyses et merge par :
 
 - tag associés au merge ou analyses (plusieurs tags possibles, 1 seul en filtre)
 - filtre en ligne ou josm (automatique en fonction du retour osmose)
-
-# Osmose OD
-
-Pour éviter de faire un doublon de ce qui existe sur osmose actuellement, il est nécessaire de :
-
-- définir comment on catégorise les fichiers OD.
-
-Proposition de reprendre la catégorisation faite par data.gouv :
-
-- Agriculture et alimentation
-- Culture
-- Economie et emploi
-- Éducation et recherche
-- International et europe
-- Logement, développement durable et énergie
-- Santé et social
-- Société
-- Territoires, transports et tourisme
