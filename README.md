@@ -1,13 +1,3 @@
-## Osmose
-
-Osmose (osmose.openstreetmap.fr) permet :
-
-- de faire tourner sur la base osm des analyses qualités  (que nous appelerons *analysis*)
-- de faire des comparaisons pour regroupements entre les données OSM et des données ouvertes (que nous appellerons les *merge*)
-
-**[Plus d'infos sur le wiki](http://wiki.openstreetmap.org/wiki/FR:Osmose)**
-
-
 # Méthodologie d'intégration d'un fichier opendata dans OSMOSE
 
 ## Osmose
