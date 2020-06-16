@@ -54,6 +54,12 @@ Cette correspondance est soit directement faite dans le fichier merge soit dans 
 	- la conflation en définissant la distance en mètre entre 2 points,
 	- une référence commune aux deux POI,
 	- un tag commun aux deux POI,
+	
+- pour chaque fichier rapproché, on va pouvoir montrer :
+	- les données manquantes dans OSM et présentes dans la base OD (missing_official)
+	- les données manquantes dans la base OD et présentes dans OSM (?????)
+	- la "potentielle fusion" des données OSM et de la base OD (possible_merge)
+	- une mise à jour faite du coté de la base OD (update_official) -> nécessite une référence commune pour s'assurer du rapprochement
 
 ## Listes des merge actuellement en cours - Github
 - [ici, dans merge data sur Github](https://github.com/osm-fr/osmose-backend/tree/master/merge_data)
